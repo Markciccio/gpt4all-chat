@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat GPT-4All</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages" id="messages"></div>
+        <input type="text" id="userInput" placeholder="Scrivi un messaggio..." onkeypress="if(event.key === 'Enter') sendMessage()">
+        <button onclick="sendMessage()">Invia</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
