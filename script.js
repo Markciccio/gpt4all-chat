@@ -11,7 +11,7 @@ async function sendMessage() {
     userMessage.textContent = userInput.value;
     messages.appendChild(userMessage);
 
-    const response = await fetch('https://nome-della-tua-app.herokuapp.com/chat', {  // URL aggiornato per Heroku
+    const response = await fetch('http://localhost:4891/v1/chat', {  // URL aggiornato per il server locale
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
